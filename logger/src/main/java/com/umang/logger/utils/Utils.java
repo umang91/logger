@@ -10,7 +10,7 @@ import java.net.UnknownHostException;
  */
 public class Utils {
 
-  static String getStackTraceString(Throwable tr) {
+  public static String getStackTraceString(Throwable tr) {
     if (tr == null) {
       return "";
     }

@@ -1,8 +1,10 @@
-apply plugin: 'com.android.library'
+plugins {
+  id("com.android.library")
+  id("kotlin-android")
+}
 
 android {
   compileSdkVersion 29
-  buildToolsVersion "30.0.0"
 
   defaultConfig {
     minSdkVersion 16
@@ -20,6 +22,19 @@ android {
       proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
     }
   }
+
+  kotlinOptions {
+    freeCompilerArgs += '-Xexplicit-api=strict'
+  }
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
 }
 
 dependencies {
@@ -28,4 +43,8 @@ dependencies {
   testImplementation 'junit:junit:4.12'
   androidTestImplementation 'androidx.test.ext:junit:1.1.1'
   androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+  implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}
+repositories {
+  mavenCentral()
 }
