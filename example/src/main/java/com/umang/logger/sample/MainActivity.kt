@@ -2,7 +2,6 @@ package com.umang.logger.sample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.umang.logger.Logger
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

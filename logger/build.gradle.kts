@@ -20,7 +20,8 @@ android {
     }
   }
 
-  kotlinOptions.apply {
+  kotlinOptions {
+    freeCompilerArgs += "-Xexplicit-api=strict"
     jvmTarget = JavaVersion.VERSION_1_8.toString()
   }
 

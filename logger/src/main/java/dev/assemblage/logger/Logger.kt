@@ -1,10 +1,12 @@
-package com.umang.logger
+package dev.assemblage.logger
 
+import dev.assemblage.logger.adapters.LogAdapter
 import java.util.*
-import android.util.Log
 
 /**
+ * Interaction class for configuration and logging.
  * @author Umang Chamaria
+ * @since 1.0.0
  */
 public class Logger private constructor(
     private val tag: String,

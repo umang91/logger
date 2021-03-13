@@ -1,8 +1,7 @@
-package com.umang.logger.adapters
+package dev.assemblage.logger
 
 import android.util.Log
-import com.umang.logger.LogAdapter
-import com.umang.logger.LogLevel
+import dev.assemblage.logger.adapters.LogAdapter
 
 /**
  * Adapter to print logs to the logcat window.

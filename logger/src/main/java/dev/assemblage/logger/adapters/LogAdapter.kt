@@ -1,4 +1,6 @@
-package com.umang.logger
+package dev.assemblage.logger.adapters
+
+import dev.assemblage.logger.LogLevel
 
 /**
  * Adapter class to extend logging

@@ -1,9 +1,9 @@
 package com.umang.logger.sample
 
 import android.app.Application
-import com.umang.logger.LogLevel
-import com.umang.logger.Logger
-import com.umang.logger.adapters.LogcatLogAdapter
+import dev.assemblage.logger.LogLevel
+import dev.assemblage.logger.LogcatLogAdapter
+import dev.assemblage.logger.Logger
 
 /**
  * @author Umang Chamaria

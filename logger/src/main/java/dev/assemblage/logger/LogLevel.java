@@ -1,4 +1,4 @@
-package com.umang.logger;
+package dev.assemblage.logger;
 
 import androidx.annotation.IntDef;
 import java.lang.annotation.Retention;
